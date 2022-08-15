@@ -4,20 +4,17 @@ Goal/Objective: Create machine learning models to identify the best location to 
 
 Information:
 
-  ML Model: logistic regression
-  Evaluation Metric: mean absolute error
-  Data Preparation: Created masks and used the Pyradiomics Python Library to extract features from each image (radiomics_features function). Appended labels and normalized each column of the feature matrix.
-  Results: 
-    Cell Model: 5.533
-    Nerve Model: 6.533
+- ML Model: logistic regression
+- Evaluation Metric: mean absolute error
+- Data Preparation: Created masks and used the Pyradiomics Python Library to extract features from each image (radiomics_features function). Appended labels and normalized each column of the feature matrix.
+- Results: Cell Model: 5.533 Nerve Model: 6.533
  
  
- Functions:
+Functions:
 
-radiomics_features: creates a feature matrix for training
-mean_norm: normalizes each columns in a data frame
-logreg_classifier: initializes and trains a logistic regression model
-photo_chooser: outputs a list of images above a 85% threshold to be used in the next step of the pipeline
-Evaluation: evaluates the logistic regression model
-logreg_classifier_features: initializes and trains a logistic regression model w/ given feature matrix
+- radiomics_features: creates a feature matrix for training
+- mean_norm: normalizes each columns in a data frame
+- logreg_classifier: initializes and trains a logistic regression model
+- photo_chooser: outputs a list of images above a 85% threshold to be used in the next step of the pipeline
+- validation: evaluates the logistic regression model
 
